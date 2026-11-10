@@ -39,12 +39,12 @@ a{color:var(--accent)}
 /* nav */
 nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 nav .w{display:flex;align-items:center;gap:20px;height:60px}
-.logo{display:flex;align-items:center;gap:9px;font-weight:800;color:var(--ink);text-decoration:none;letter-spacing:-.2px}
+.logo{display:flex;align-items:center;gap:9px;white-space:nowrap;font-weight:800;color:var(--ink);text-decoration:none;letter-spacing:-.2px}
 .logo i{width:28px;height:28px;border-radius:7px;background:var(--accent);display:grid;place-items:center;color:var(--on-accent);font-style:normal;font-size:14px;font-weight:800}
 .links{display:flex;gap:22px;margin-left:auto}
 .links a{color:var(--soft);text-decoration:none;font-size:15px;font-weight:500}
 .links a:hover{color:var(--ink)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--on-accent);padding:12px 20px;border-radius:9px;font-weight:600;font-size:15.5px;text-decoration:none;border:1px solid var(--accent);transition:background .15s,transform .15s}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--on-accent);padding:12px 20px;border-radius:9px;font-weight:600;font-size:15.5px;text-decoration:none;border:1px solid var(--accent);transition:background .15s,transform .15s}
 .btn:hover{background:var(--accent2);border-color:var(--accent2)}
 .btn:active{transform:translateY(1px)}
 .btn.ghost{background:transparent;color:var(--accent)}
@@ -52,6 +52,7 @@ nav .w{display:flex;align-items:center;gap:20px;height:60px}
 .btn.sm{padding:8px 14px;font-size:14px}
 .btn.block{width:100%}
 @media(max-width:760px){.links{display:none}nav .btn{margin-left:auto}}
+@media(max-width:400px){.logo{font-size:15px}.logo i{width:26px;height:26px}nav .btn.sm{padding:7px 11px;font-size:13.5px}}
 /* hero */
 .hero{padding:64px 0 56px;background:linear-gradient(180deg,var(--tint),var(--bg))}
 .hero .w{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
@@ -222,8 +223,8 @@ footer a{color:var(--soft)}
         <li><span class="tick">✓</span>Photo brief</li>
         <li><span class="tick">✓</span>Delivered within 48 hours of your answers</li>
       </ul>
-      <a class="btn block" href="https://razorpay.me/@rohit7841" target="_blank" rel="noopener">Pay with Razorpay</a>
-      <div class="paynote">Enter ₹999, or ₹499 if we've offered you the launch price</div>
+      <a class="btn block" href="mailto:rohit.singh232629@gmail.com?subject=I%27d%20like%20the%20One%20Page%20Fix&amp;body=Hi%20Rohit%2C%0A%0AI%27d%20like%20the%20One%20Page%20Fix.%0AMy%20product%20page%3A%20%0A%0APlease%20send%20me%20the%20payment%20link.%0A%0AThanks">Book the One Page Fix</a>
+      <div class="paynote">We reply with a secure Razorpay payment link (UPI, card or netbanking)</div>
     </div>
     <div class="plan">
       <h3>Top 5 Pack</h3>
@@ -235,8 +236,8 @@ footer a{color:var(--soft)}
         <li><span class="tick">✓</span>Notes on your home and collection pages</li>
         <li><span class="tick">✓</span>Delivered within 5 working days</li>
       </ul>
-      <a class="btn block" href="https://razorpay.me/@rohit7841" target="_blank" rel="noopener">Pay with Razorpay</a>
-      <div class="paynote">Enter ₹3,999 on the Razorpay page</div>
+      <a class="btn block" href="mailto:rohit.singh232629@gmail.com?subject=I%27d%20like%20the%20Top%205%20Pack&amp;body=Hi%20Rohit%2C%0A%0AI%27d%20like%20the%20Top%205%20Pack.%0AMy%20product%20page%3A%20%0A%0APlease%20send%20me%20the%20payment%20link.%0A%0AThanks">Book the Top 5 Pack</a>
+      <div class="paynote">We reply with a secure Razorpay payment link</div>
     </div>
     <div class="plan">
       <h3>Monthly Desk</h3>
@@ -248,11 +249,11 @@ footer a{color:var(--soft)}
         <li><span class="tick">✓</span>A short monthly report</li>
         <li><span class="tick">✓</span>Cancel any time</li>
       </ul>
-      <a class="btn block" href="https://razorpay.me/@rohit7841" target="_blank" rel="noopener">Pay with Razorpay</a>
-      <div class="paynote">Enter ₹4,999 for the first month</div>
+      <a class="btn block" href="mailto:rohit.singh232629@gmail.com?subject=I%27d%20like%20the%20Monthly%20Desk&amp;body=Hi%20Rohit%2C%0A%0AI%27d%20like%20the%20Monthly%20Desk.%0AMy%20product%20page%3A%20%0A%0APlease%20send%20me%20the%20payment%20link.%0A%0AThanks">Book the Monthly Desk</a>
+      <div class="paynote">We reply with a secure Razorpay payment link</div>
     </div>
   </div>
-  <p class="note">Fixes are for pages in English. You publish the changes yourself, so we never need your Shopify login. Razorpay will show the payee name as ROHIT.</p>
+  <p class="note">Fixes are for pages in English. You publish the changes yourself, so we never need your Shopify login. Payments go through Razorpay, and the payee name shows as ROHIT. Email not opening? Write to <b>rohit.singh232629@gmail.com</b>.</p>
 </div></section>
 
 <section class="alt" id="how"><div class="w">
@@ -261,13 +262,13 @@ footer a{color:var(--soft)}
   <p class="intro">Most brands email us first. If you'd rather start straight away, you can pay first.</p>
   <ol class="steps">
     <li><h3>Send your product link</h3><p>Email us the page you want fixed. We'll confirm within a day that it's a good fit.</p></li>
-    <li><h3>Pay through Razorpay</h3><p>UPI, card or netbanking. Add your store name in the note so we can match your payment.</p></li>
+    <li><h3>Pay through Razorpay</h3><p>We send you a secure Razorpay link. Pay by UPI, card or netbanking.</p></li>
     <li><h3>Answer a 5-minute form</h3><p>A few questions about your product, label and customers. No calls needed.</p></li>
     <li><h3>Get your fix as a PDF</h3><p>Within 48 hours. Paste it in, then compare your add-to-cart rate before and after.</p></li>
   </ol>
   <div class="payfirst">
-    <p><b>Already sure?</b> Pay now and email us your product link. If we can't help with your page, we'll refund you in full.</p>
-    <a class="btn" href="https://razorpay.me/@rohit7841" target="_blank" rel="noopener">Pay now</a>
+    <p><b>Already sure?</b> Email us your product link and the plan you want. We'll send your payment link the same day, and start as soon as it's paid.</p>
+    <a class="btn" href="mailto:rohit.singh232629@gmail.com?subject=I%27d%20like%20the%20One%20Page%20Fix&amp;body=Hi%20Rohit%2C%0A%0AI%27d%20like%20the%20One%20Page%20Fix.%0AMy%20product%20page%3A%20%0A%0APlease%20send%20me%20the%20payment%20link.%0A%0AThanks">Book now</a>
   </div>
 </div></section>
 
@@ -289,7 +290,7 @@ footer a{color:var(--soft)}
   <details><summary>Will this increase my sales?</summary><p>We can't promise that, and you should be wary of anyone who does. We fix things that plausibly stop people buying, and show you how to measure the change.</p></details>
   <details><summary>Who else have you worked with?</summary><p>We've just started, so we have no client results to show yet. That's why you can read a full sample before paying, and why we offer a refund.</p></details>
   <details><summary>Is paying through Razorpay safe?</summary><p>Payments are handled by Razorpay, one of India's largest payment gateways. We never see your card, UPI or bank details. You'll get a receipt from Razorpay by email.</p></details>
-  <details><summary>Should I pay first or email first?</summary><p>Either is fine. Most brands email their product link first, and we confirm it's a good fit within a day. If you pay first and we can't help with your page, we refund you in full.</p></details>
+  <details><summary>When do I pay?</summary><p>After we've confirmed your page is a good fit. Email us your product link, and we reply within a day with a yes and a secure Razorpay payment link. If we ever can't deliver after you've paid, we refund you in full.</p></details>
   <details><summary>What if I'm not happy?</summary><p>Tell us within 7 days of delivery. We'll revise it once, and if it still isn't useful, we'll refund you.</p></details>
   <details><summary>Will you make health or legal claims for us?</summary><p>No. We use only facts you can back up, and flag claims worth checking with your compliance adviser. We don't give legal advice.</p></details>
   <details><summary>Who's behind Product Page Desk?</summary><p>Rohit Singh, based in India. You can reach me directly at <a href="mailto:rohit.singh232629@gmail.com">rohit.singh232629@gmail.com</a>, and I reply to every email myself.</p></details>
